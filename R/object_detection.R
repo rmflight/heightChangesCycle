@@ -41,4 +41,6 @@ detect_eyes = function(img){
   if (!dplyr::between(rad2_1, 0.9, 1.1)) {
     stop("Eye radii are different by more than 10%, stopping!")
   }
+  
+  keep_eyes
 }
